@@ -1,6 +1,6 @@
 package com.ss.java8.newfeatures;
 
-public interface Inter2 {
+public interface Inter1M {
     public void m1();
 
 }
