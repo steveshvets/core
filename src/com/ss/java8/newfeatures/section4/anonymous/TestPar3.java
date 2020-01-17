@@ -11,8 +11,8 @@ public class TestPar3 {
             int x = 999; //instance variable
             @Override
             public void m1() {
-                System.out.println(this.x);
-                System.out.println("outtter" + TestPar3.this.x);
+                System.out.println(this.x); //999
+                System.out.println("outtter" + TestPar3.this.x); //888
             }
         };
         i.m1();
