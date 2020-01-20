@@ -1,4 +1,4 @@
-package com.ss.java8.newfeatures.section3.collections;
+package com.ss.java8.newfeatures.section3;
 
 import java.util.HashMap;
 

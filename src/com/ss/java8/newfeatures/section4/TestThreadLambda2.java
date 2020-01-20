@@ -1,4 +1,4 @@
-package com.ss.java8.newfeatures.section4.anonymous;
+package com.ss.java8.newfeatures.section4;
 
 /*
 default with no comparator --> output insertion order

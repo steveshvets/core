@@ -1,7 +1,5 @@
 package com.ss.java8.newfeatures.section5;
 
-import com.ss.java8.newfeatures.section4.anonymous.TestPar3;
-
 public class TestP3 implements InterfS{
 
     public static void main(String[] args) {

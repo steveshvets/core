@@ -1,4 +1,4 @@
-package com.ss.java8.newfeatures.section4.anonymous;
+package com.ss.java8.newfeatures.section4;
 
 import com.ss.java8.newfeatures.Inter1M;
 

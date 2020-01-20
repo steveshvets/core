@@ -1,9 +1,4 @@
-package com.ss.java8.newfeatures.section4.anonymous;
-
-import com.ss.java8.newfeatures.section3.collections.Employee;
-
-import java.util.ArrayList;
-import java.util.Collections;
+package com.ss.java8.newfeatures.section4;
 
 /*
 default with no comparator --> output insertion order
