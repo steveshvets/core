@@ -1,5 +1,8 @@
 package com.ss.java8.codingit;
 
+import com.ss.java8.codingit.data.Student;
+import com.ss.java8.codingit.data.StudentDataBase;
+
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -24,11 +27,13 @@ public class StreamMinMaxExample {
         Boolean t1 = l.stream().anyMatch(i->i==6);
         System.out.println("match " + t1);
 
-        Student s1 = new Student("steve", 3.8, 2, "male");
-        Student s2 = new Student("jen", 4.0, 3, "female");
-        Student s3 = new Student("bob", 4.0, 3, "male");
-        List<Student> l2 = new ArrayList<>();
-        l2.add(s1); l2.add(s2);l2.add(s3);
+        List<Student> l2 = StudentDataBase.getAllStudents();
+//
+//        Student s1 = new Student("steve", 3.8, 2, "male");
+//        Student s2 = new Student("jen", 4.0, 3, "female");
+//        Student s3 = new Student("bob", 4.0, 3, "male");
+//        List<Student> l2 = new ArrayList<>();
+//        l2.add(s1); l2.add(s2);l2.add(s3);
 
         Map<Double,List<Student>> m = l2.stream().collect(Collectors.groupingBy(s->s.getGpa()));
         System.out.println(m);
