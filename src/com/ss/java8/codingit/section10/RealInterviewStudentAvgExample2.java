@@ -1,9 +1,6 @@
 package com.ss.java8.codingit.section10;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -30,10 +27,46 @@ public class RealInterviewStudentAvgExample2 {
         System.out.println(list);
 
 
-        Map<String, List<String[]>> nameGpaGroupedBy =
-                Stream.of(students)
-                .peek(s-> System.out.println(s[0] + "," + s[1]))
-                .collect(Collectors.groupingBy(s -> s[0]));
+//        Map<String, String[]> nameGpaGroupedBy =
+
+//        System.out.println("*******************************************************");
+//        Map <String, Optional<String[]>> m =
+//                Stream.of(students)
+//                .peek(s-> System.out.println(s[0] + "," + s[1]))
+//                .collect(Collectors.groupingBy(s -> s[0],
+//                        Collectors.maxBy(new Comparator<String[]>() {
+//                            @Override
+//                            public int compare(String[] s1, String[]st1) {
+//                                if
+//                            }
+//                        }Comparator.compare((s1, s2) -> {
+//                            System.out.println("inside s1.length=" + s1.length + " s1[0]=" + s1[0] + " s1[1]=" + s1[1]);
+//                            System.out.println("inside s2.length=" + s2. + " s2[0]=" + s2[0] + " s2[1]=" + s1[1]);
+//                            return s[1];
+//                        }))))
+//                );
+//        System.out.println("*******************************************************");
+//        for (Map.Entry <String, Optional<String[]>> e: m.entrySet()){
+//            System.out.println("key=" + e.getKey());
+//            String[] v = e.getValue().get();
+//            for (String l : v){
+//                System.out.println("value=" + l);
+//            }
+//        }
+
+
+
+        System.out.println("*******************************************************");
+
+        System.out.println("*******************************************************");
+//        for (Map.Entry <String, Optional<String[]>> e: m.entrySet()){
+//            System.out.println("key=" + e.getKey());
+//            String[] v = e.getValue().get();
+//            for (String l : v){
+//                System.out.println("value=" + l);
+//            }
+//        }
+
 
 //        Optional o =
 //                Stream.of(students)
