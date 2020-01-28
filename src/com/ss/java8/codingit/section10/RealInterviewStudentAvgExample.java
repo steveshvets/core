@@ -12,8 +12,6 @@ import java.util.stream.Stream;
 public class RealInterviewStudentAvgExample {
 
     public static void main(String[] args) {
-
-
         String[][] students = {
                 {"a", "3.5"},
                 {"b", "3.7"},
@@ -22,15 +20,10 @@ public class RealInterviewStudentAvgExample {
                 {"d", "3.2"},
         };
 
-//        for (String[] x :students) {
-//            System.out.println(x[0] + "," + x[1]);
-//        }
-
         List<String[]> list =
                 Stream.of(students)
                         .collect(Collectors.toList());
         System.out.println(list);
-
 
         Map<String, List<String[]>> nameGpaGroupedBy =
                 Stream.of(students)
@@ -63,8 +56,6 @@ public class RealInterviewStudentAvgExample {
         if (max.isPresent()){
             System.out.println("max " + max.get());
         }
-
-//        System.out.println(nameGpaGroupedBy);
-        }
+    }
 
 }
