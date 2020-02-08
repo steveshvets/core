@@ -2,19 +2,19 @@ package com.ss.designPatterns.behavioral.observer.howtodoitinjava;
 
 public class Main {
     public static void main(String[] args) {
-        MessageSubscriberOne s1 = new MessageSubscriberOne();
-        MessageSubscriberTwo s2 = new MessageSubscriberTwo();
-        MessageSubscriberThree s3 = new MessageSubscriberThree();
+        MsgObserverOne s1 = new MsgObserverOne();
+        MsgObserverTwo s2 = new MsgObserverTwo();
+        MsgObserverThree s3 = new MsgObserverThree();
 
-        MessagePublisher p = new MessagePublisher();
+        MsgPublisherObservable p = new MsgPublisherObservable();
         p.attach(s1);
         p.attach(s2);
 
-        p.notifyUpdate(new Message("First Message"));   //s1 and s2 will receive the update
+        p.notifyUpdate(new MessageEvent("First Message"));   //s1 and s2 will receive the update
 
         p.detach(s1);
         p.attach(s3);
 
-        p.notifyUpdate(new Message("Second Message")); //s2 and s3 will receive the update
+        p.notifyUpdate(new MessageEvent("Second Message")); //s2 and s3 will receive the update
     }
 }

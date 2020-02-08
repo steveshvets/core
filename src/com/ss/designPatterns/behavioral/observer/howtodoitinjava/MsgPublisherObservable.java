@@ -2,20 +2,21 @@ package com.ss.designPatterns.behavioral.observer.howtodoitinjava;
 
 import java.util.ArrayList;
 import java.util.List;
-
-public class MessagePublisher implements Subject {
+/*
+Subject is an having methods to attach and detach observers.
+Notifies the attached Observers!!!
+Observable is also know as Subject
+ */
+public class MsgPublisherObservable {
     private List<Observer> observers = new ArrayList<>();
 
-    @Override
     public void attach(Observer o) {
         observers.add(o);
     }
-    @Override
     public void detach(Observer o) {
         observers.remove(o);
     }
-    @Override
-    public void notifyUpdate(Message m) {
+    public void notifyUpdate(MessageEvent m) {
         for (Observer o : observers) {
             o.update(m);
         }

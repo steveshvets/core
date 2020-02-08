@@ -1,11 +1,11 @@
 package com.ss.designPatterns.behavioral.observer.howtodoitinjava;
 /*
-This must be an immutable object so that no class can modify it’s content by mistake.
+immutable object so that no class can modify it’s content by mistake.
  */
-public class Message {
+public class MessageEvent {
     final String messageContent;
 
-    public Message (String m) {
+    public MessageEvent(String m) {
         this.messageContent = m;
     }
 
