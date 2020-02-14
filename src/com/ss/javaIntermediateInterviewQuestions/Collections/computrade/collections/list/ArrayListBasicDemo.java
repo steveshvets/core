@@ -55,7 +55,9 @@ public class ArrayListBasicDemo {
 	  //iterate using while with arraylist.get(index)
 	  
 	  //TODO #3 - advance.
-	  //iterate using collection stream() utils. 
+	  //iterate using collection stream() utils.
+
+		students.stream().forEach(s->System.out.println("name=" +  s.getName() + " id=" +s.getStudentID()));
 	  
     }
 }
