@@ -1,13 +1,18 @@
 package com.ss.designPatterns.behavioral.mediator2;
 
-public class ChatRoomDemo {
+/*
+every Participant will have mediator
+But at no time a Person will reference another Person
+ */
+public class ChatMain {
     public static void main(String[] args) {
-        ChatRoom room = new ChatRoom();
+        ChatMediator room = new ChatMediator();
 
         Person john = new Person("John");
         Person jane = new Person("Jane");
 
-        room.join(john); // no message here
+        //nobody to receive message that John joined the room
+        room.join(john);
         room.join(jane);
 
         john.say("hi room");
