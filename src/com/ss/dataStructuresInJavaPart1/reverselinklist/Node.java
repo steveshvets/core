@@ -1,4 +1,4 @@
-package com.ss.dataStructuresInJavaPart1.middlenode;
+package com.ss.dataStructuresInJavaPart1.reverselinklist;
 
 public class Node<T extends Comparable<T>> {
 

@@ -1,4 +1,4 @@
-package com.ss.dataStructuresInJavaPart1.reverseLinkList;
+package com.ss.dataStructuresInJavaPart1.reverselinklist;
 
 public class App {
 
