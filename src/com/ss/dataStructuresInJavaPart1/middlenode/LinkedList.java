@@ -48,7 +48,20 @@ public class LinkedList<T extends Comparable<T>> implements List<T> {
             remove(data, head, head.getNextNode());
         }
     }
+    private void remove(T dataToRemove, Node<T> previousNode, Node<T> actualNode) {
 
+        while (actualNode != null) {
+
+            if (actualNode.getData().compareTo(dataToRemove) == 0) {
+                previousNode.setNextNode(actualNode.getNextNode());
+                actualNode = null;
+                return;
+            }
+
+            previousNode = actualNode;
+            actualNode = actualNode.getNextNode();
+        }
+    }
     @Override
     public void traverseList() {
 
@@ -80,21 +93,6 @@ public class LinkedList<T extends Comparable<T>> implements List<T> {
         } else {
             Node<T> newNode = new Node<>(data);
             node.setNextNode(newNode);
-        }
-    }
-
-    private void remove(T dataToRemove, Node<T> previousNode, Node<T> actualNode) {
-
-        while (actualNode != null) {
-
-            if (actualNode.getData().compareTo(dataToRemove) == 0) {
-                previousNode.setNextNode(actualNode.getNextNode());
-                actualNode = null;
-                return;
-            }
-
-            previousNode = actualNode;
-            actualNode = actualNode.getNextNode();
         }
     }
 
