@@ -7,18 +7,15 @@ public class LinkedList<T extends Comparable<T>> implements List<T> {
 
     @Override
     public void reverse() {
-    	
     	Node<T> currentNode = this.head;
     	Node<T> previousNode = null;
     	Node<T> nextNode = null;
-    	
     	while(currentNode!=null) {
     		nextNode = currentNode.getNextNode();
     		currentNode.setNextNode(previousNode);
     		previousNode = currentNode;
     		currentNode = nextNode;
     	}
-    	
     	this.head = previousNode;
     }
     
