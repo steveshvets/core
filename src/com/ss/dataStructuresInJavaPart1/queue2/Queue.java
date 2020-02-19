@@ -1,5 +1,5 @@
 package com.ss.dataStructuresInJavaPart1.queue2;
-
+//FIFO
 public class Queue {
     Node front, rear;
     public Queue() {
